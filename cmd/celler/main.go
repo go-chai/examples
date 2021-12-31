@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	_ "github.com/go-chai/examples/cmd/celler-docs/docs" // This is required to be able to serve the stored swagger spec in prod
+	_ "github.com/go-chai/examples/cmd/celler/docs" // This is required to be able to serve the stored swagger spec in prod
 	"github.com/go-chai/examples/pkg/router"
 	httpSwagger "github.com/swaggo/http-swagger"
 )
