@@ -4,10 +4,9 @@ import (
 	"net/http"
 	"strconv"
 
+	"github.com/go-chai/examples/pkg/httputil"
+	"github.com/go-chai/examples/pkg/model"
 	"github.com/go-chi/chi/v5"
-
-	"github.com/go-chai/chai/examples/celler/httputil"
-	"github.com/go-chai/chai/examples/celler/model"
 )
 
 // ShowBottle godoc

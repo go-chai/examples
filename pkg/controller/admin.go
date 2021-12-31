@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/go-chai/chai/examples/celler/model"
+	"github.com/go-chai/examples/pkg/model"
 )
 
 // Auth godoc
