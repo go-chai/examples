@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/ghodss/yaml"
+	"github.com/go-chai/chai"
 	"github.com/go-chai/chai/openapi2"
 	"github.com/go-chai/examples/pkg/router"
 	"github.com/go-openapi/spec"
@@ -121,7 +121,7 @@ func addCustomDocs(docs *spec.Swagger) {
 }
 
 func LogYAML(v interface{}) {
-	bytes, err := yaml.Marshal(v)
+	bytes, err := chai.MarshalYAML(v)
 	if err != nil {
 		panic(err)
 	}
