@@ -3,7 +3,7 @@ module github.com/go-chai/examples
 go 1.18
 
 require (
-	github.com/go-chai/chai v0.0.3
+	github.com/go-chai/chai v0.4.0
 	github.com/go-chi/chi/v5 v5.0.7
 	github.com/go-chi/render v1.0.1
 	github.com/go-openapi/spec v0.20.4

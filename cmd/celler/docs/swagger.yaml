@@ -1,15 +1,4 @@
 definitions:
-  chai.Error:
-    properties:
-      error:
-        type: string
-      error_debug:
-        type: string
-      error_description:
-        type: string
-      status_code:
-        type: integer
-    type: object
   controller.Message:
     properties:
       message:
@@ -547,7 +536,7 @@ paths:
         default:
           description: ""
           schema:
-            $ref: '#/definitions/chai.Error'
+            $ref: '#/definitions/httputil.HTTPError'
       summary: post request example
   /api/v1/examples/calc:
     get:

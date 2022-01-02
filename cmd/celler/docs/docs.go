@@ -668,7 +668,7 @@ var doc = `{
                     "default": {
                         "description": "",
                         "schema": {
-                            "$ref": "#/definitions/chai.Error"
+                            "$ref": "#/definitions/httputil.HTTPError"
                         }
                     }
                 }
@@ -942,23 +942,6 @@ var doc = `{
         }
     },
     "definitions": {
-        "chai.Error": {
-            "type": "object",
-            "properties": {
-                "error": {
-                    "type": "string"
-                },
-                "error_debug": {
-                    "type": "string"
-                },
-                "error_description": {
-                    "type": "string"
-                },
-                "status_code": {
-                    "type": "integer"
-                }
-            }
-        },
         "controller.Message": {
             "type": "object",
             "properties": {

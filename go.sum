@@ -14,8 +14,8 @@ github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/ghodss/yaml v1.0.0 h1:wQHKEahhL6wmXdzwWG11gIVCkOv05bNOh+Rxn0yngAk=
 github.com/ghodss/yaml v1.0.0/go.mod h1:4dBDuWmgqj2HViK6kFavaiC9ZROes6MMH2rRYeMEF04=
-github.com/go-chai/chai v0.0.3 h1:3+gzAhhyTQRkfs+RCyX13I6sQwf5lG3wWlI4PcSKVak=
-github.com/go-chai/chai v0.0.3/go.mod h1:Qp07Mlw+eOZx3iE9FFSScTSw9rpLeyG/ukyT8+JrM+s=
+github.com/go-chai/chai v0.4.0 h1:wgVmbStCGakqpYHKpkClamPmTsWIsmfCQvPBO7X9xR0=
+github.com/go-chai/chai v0.4.0/go.mod h1:UwR5rO3tv6O3oSEkni86HP9hz7RwZKRTtj94Njzr2+g=
 github.com/go-chai/swag v1.7.8-fork h1:kaksaA6fePXuXDbCxfa8U1TLZmw3AFMUlzJiFwQV3Qg=
 github.com/go-chai/swag v1.7.8-fork/go.mod h1:gZ+TJ2w/Ve1RwQsA2IRoSOTidHz6DX+PIG8GWvbnoLU=
 github.com/go-chi/chi/v5 v5.0.7 h1:rDTPXLDHGATaeHvVlLcR4Qe0zftYethFucbjVQ1PxU8=

@@ -3,9 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/go-chai/chai"
+	chai "github.com/go-chai/chai/chi"
 	"github.com/go-chai/chai/openapi2"
 	"github.com/go-chai/examples/pkg/router"
+
 	"github.com/go-openapi/spec"
 )
 
@@ -13,21 +14,21 @@ func main() {
 	r := router.GetRoutes()
 
 	// This must be used only during development to generate the swagger spec
-	docs, err := openapi2.Docs(r)
+	docs, err := chai.OpenAPI2(r)
 	if err != nil {
-		panic(fmt.Sprintf("openapi2.Docs() failed: %+v", err))
+		panic(fmt.Sprintf("chai.OpenAPI2() failed: %+v", err))
 	}
 
 	addCustomDocs(docs)
 
-	LogYAML(docs)
+	openapi2.LogYAML(docs)
 
 	// This must be used only during development to store the swagger spec
 	err = openapi2.WriteDocs(docs, &openapi2.GenConfig{
 		OutputDir: "cmd/celler/docs",
 	})
 	if err != nil {
-		panic(fmt.Sprintf("gen.New().Generate() failed: %+v", err))
+		panic(fmt.Sprintf("openapi2.WriteDocs() failed: %+v", err))
 	}
 }
 
@@ -118,14 +119,4 @@ func addCustomDocs(docs *spec.Swagger) {
 			},
 		},
 	}
-}
-
-func LogYAML(v interface{}) {
-	bytes, err := chai.MarshalYAML(v)
-	if err != nil {
-		panic(err)
-	}
-	fmt.Println(string(bytes))
-
-	return
 }

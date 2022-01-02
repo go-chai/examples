@@ -4,7 +4,7 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/go-chai/chai"
+	chai "github.com/go-chai/chai/chi"
 	"github.com/go-chai/examples/pkg/controller"
 	"github.com/go-chai/examples/pkg/httputil"
 	"github.com/go-chi/chi/v5"

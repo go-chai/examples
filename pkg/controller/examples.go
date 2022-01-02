@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/go-chai/chai"
+	"github.com/go-chai/examples/pkg/httputil"
 	"github.com/go-chai/examples/pkg/model"
 	"github.com/go-chi/chi/v5"
 )
@@ -136,7 +136,7 @@ func (c *Controller) AttributeExample(w http.ResponseWriter, r *http.Request) (s
 // PostExample godoc
 // @Summary      post request example
 // @Description  post request example
-func (c *Controller) PostExample(account *model.Account, w http.ResponseWriter, r *http.Request) (*model.Account2, int, *chai.Error) {
+func (c *Controller) PostExample(account *model.Account, w http.ResponseWriter, r *http.Request) (*model.Account2, int, *httputil.HTTPError) {
 	return &model.Account2{
 		ID:         account.ID,
 		Name:       account.Name,
