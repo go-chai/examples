@@ -3,7 +3,7 @@ module github.com/go-chai/examples
 go 1.18
 
 require (
-	github.com/go-chai/chai v0.4.0
+	github.com/go-chai/chai v0.6.0
 	github.com/go-chi/chi/v5 v5.0.7
 	github.com/go-chi/render v1.0.1
 	github.com/go-openapi/spec v0.20.4
@@ -18,6 +18,7 @@ require (
 	github.com/PuerkitoBio/purell v1.1.1 // indirect
 	github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578 // indirect
 	github.com/ghodss/yaml v1.0.0 // indirect
+	github.com/go-chai/swag v1.7.8-fork2 // indirect
 	github.com/go-openapi/jsonpointer v0.19.5 // indirect
 	github.com/go-openapi/jsonreference v0.19.6 // indirect
 	github.com/go-openapi/swag v0.19.15 // indirect
@@ -30,5 +31,3 @@ require (
 	golang.org/x/tools v0.1.7 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
-
-replace github.com/swaggo/swag => github.com/go-chai/swag v1.7.8-fork
