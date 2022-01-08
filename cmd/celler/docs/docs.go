@@ -265,13 +265,6 @@ var doc = `{
                 "summary": "Update an account",
                 "parameters": [
                     {
-                        "type": "integer",
-                        "description": "Account ID",
-                        "name": "id",
-                        "in": "path",
-                        "required": true
-                    },
-                    {
                         "description": "Update account",
                         "name": "account",
                         "in": "body",
@@ -279,6 +272,13 @@ var doc = `{
                         "schema": {
                             "$ref": "#/definitions/model.UpdateAccount"
                         }
+                    },
+                    {
+                        "type": "integer",
+                        "description": "Account ID",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
                     }
                 ],
                 "responses": {
@@ -324,17 +324,17 @@ var doc = `{
                 "summary": "Upload account image",
                 "parameters": [
                     {
-                        "type": "integer",
-                        "description": "Account ID",
-                        "name": "id",
-                        "in": "path",
-                        "required": true
-                    },
-                    {
                         "type": "file",
                         "description": "account image",
                         "name": "file",
                         "in": "formData",
+                        "required": true
+                    },
+                    {
+                        "type": "integer",
+                        "description": "Account ID",
+                        "name": "id",
+                        "in": "path",
                         "required": true
                     }
                 ],
@@ -557,14 +557,10 @@ var doc = `{
                 "summary": "attribute example",
                 "parameters": [
                     {
-                        "enum": [
-                            "A",
-                            "B",
-                            "C"
-                        ],
                         "type": "string",
-                        "description": "string enums",
-                        "name": "enumstring",
+                        "default": "A",
+                        "description": "string default",
+                        "name": "default",
                         "in": "query"
                     },
                     {
@@ -590,11 +586,14 @@ var doc = `{
                         "in": "query"
                     },
                     {
-                        "maxLength": 10,
-                        "minLength": 5,
+                        "enum": [
+                            "A",
+                            "B",
+                            "C"
+                        ],
                         "type": "string",
-                        "description": "string valid",
-                        "name": "string",
+                        "description": "string enums",
+                        "name": "enumstring",
                         "in": "query"
                     },
                     {
@@ -606,10 +605,11 @@ var doc = `{
                         "in": "query"
                     },
                     {
+                        "maxLength": 10,
+                        "minLength": 5,
                         "type": "string",
-                        "default": "A",
-                        "description": "string default",
-                        "name": "default",
+                        "description": "string valid",
+                        "name": "string",
                         "in": "query"
                     }
                 ],
@@ -747,15 +747,15 @@ var doc = `{
                 "parameters": [
                     {
                         "type": "integer",
-                        "description": "Group ID",
-                        "name": "group_id",
+                        "description": "Account ID",
+                        "name": "account_id",
                         "in": "path",
                         "required": true
                     },
                     {
                         "type": "integer",
-                        "description": "Account ID",
-                        "name": "account_id",
+                        "description": "Group ID",
+                        "name": "group_id",
                         "in": "path",
                         "required": true
                     }
