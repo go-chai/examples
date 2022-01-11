@@ -3,7 +3,7 @@
 Gen doc
 
 ```console
-$ go run -gcflags -N ./cmd/celler-docs/main.go
+$ go run ./cmd/celler-docs/main.go
 ```
 
 Run app
